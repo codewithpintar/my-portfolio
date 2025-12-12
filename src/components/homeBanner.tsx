@@ -76,7 +76,7 @@ const HomeBanner = () => {
                             animate={{ opacity: 1, x: 0, scale: 1 }}
                             transition={{ duration: 0.8 }}
                         >
-                            <img src="/images/banner.png" alt="Banner" />
+                            <img src="./images/banner.png" alt="Banner" />
                         </motion.div>
 
                     </div>
