@@ -111,7 +111,7 @@ const OurProjects = () => {
                             {
                                 title: "BetterLYF Wellness Platform",
                                 url: "https://www.betterlyf.com/",
-                                img: "/images/betterlyf-dash.png",
+                                img: "./images/betterlyf-dash.png",
                                 tech: ["Node.js", "Express.js", "MongoDB", "Next.js", "HTML", "CSS"],
                                 desc: "A mental wellness platform offering therapy sessions, emotional support, and self-help tools with secure user dashboards."
                             },
@@ -119,7 +119,7 @@ const OurProjects = () => {
                             {
                                 title: "Fieldking Warranty Activation Portal",
                                 url: "https://warranty.fieldking.com/",
-                                img: "/images/fieldking-dash.png",
+                                img: "./images/fieldking-dash.png",
                                 tech: ["Node.js", "Express.js", "MongoDB", "Next.js", "HTML", "CSS"],
                                 desc: "A warranty registration system that allows customers and dealers to activate product warranties with real-time data validation."
                             },
@@ -127,7 +127,7 @@ const OurProjects = () => {
                             {
                                 title: "Fieldking Agricultural Equipment Website",
                                 url: "https://www.fieldking.com/",
-                                img: "/images/fieldking.png",
+                                img: "./images/fieldking.png",
                                 tech: ["PHP", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
                                 desc: "Corporate website showcasing agricultural machinery with optimized performance, multilingual content, and SEO enhancements."
                             },
@@ -135,7 +135,7 @@ const OurProjects = () => {
                             {
                                 title: "Beroni Agricultural Solutions",
                                 url: "https://www.beroni.in/",
-                                img: "/images/beroni.png",
+                                img: "./images/beroni.png",
                                 tech: ["PHP", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
                                 desc: "Brand website for Beroni farming equipment, built with responsive UI, fast navigation, and optimized product showcases."
                             },
