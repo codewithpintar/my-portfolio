@@ -90,7 +90,7 @@ const Home = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
             >
-              <img src="./images/about-us-2.png" alt="About" />
+              <img loading="lazy" src="./images/about-us-2.png" alt="About" />
             </motion.div>
           </div>
         </div>
@@ -213,7 +213,7 @@ const Home = () => {
               transition={{ duration: 0.7 }}
               animate={{ y: [0, -14, 0] }}
             >
-              <img src="./images/betterlyf-dash.png" alt="BetterLYF Clone Preview" />
+              <img loading="lazy" src="./images/betterlyf-dash.png" alt="BetterLYF Clone Preview" />
             </motion.div>
 
           </div>
@@ -231,7 +231,7 @@ const Home = () => {
               transition={{ duration: 0.7 }}
               animate={{ y: [0, -14, 0] }}
             >
-              <img src="./images/fieldking-dash.png" alt="Warranty System Preview" />
+              <img loading="lazy" src="./images/fieldking-dash.png" alt="Warranty System Preview" />
             </motion.div>
 
 
@@ -432,7 +432,7 @@ const Home = () => {
               transition={{ duration: 0.7 }}
               animate={{ y: [0, -14, 0] }}
             >
-              <img src="./images/fieldking.png" alt="Fieldking PHP Website Preview" />
+              <img loading="lazy" src="./images/fieldking.png" alt="Fieldking PHP Website Preview" />
             </motion.div>
 
           </div>
@@ -460,7 +460,7 @@ const Home = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
             >
-              <img src="./images/expertise.png" alt="Expertise" />
+              <img loading="lazy" src="./images/expertise.png" alt="Expertise" />
             </motion.div>
 
             {/* LEFT CONTENT */}

@@ -54,6 +54,7 @@ const OurProjects = () => {
                             y: [0, -12, 0], // floating effect
                         }}
                         style={{ marginTop: "20px" }}
+                        loading="lazy"
                     />
                 </div>
             </section>
@@ -149,7 +150,7 @@ const OurProjects = () => {
                                 }}
                                 transition={{ duration: 0.6, ease: "easeOut" }}
                             >
-                                <img src={project.img} alt="Project" className={styles.cardImage} />
+                                <img loading="lazy" src={project.img} alt="Project" className={styles.cardImage} />
 
                                 <div className={styles.cardOverlay}>
                                     <h3>{project.title}</h3>

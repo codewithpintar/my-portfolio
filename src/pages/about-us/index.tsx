@@ -54,6 +54,7 @@ const AboutUs = () => {
                             y: [0, -12, 0], // floating effect
                         }}
                         style={{ marginTop: "20px" }}
+                        loading="lazy"
                     />
                 </div>
             </section>
