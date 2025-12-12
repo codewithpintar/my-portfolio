@@ -438,14 +438,7 @@ const Home = () => {
           </div>
           {/* 3rd Project End */}
 
-          <motion.a
-            href={'/my-portfolio/our-projects/'}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <button className='getProjectBtn' style={{ margin: 'auto', display: 'block' }}>View All</button>
-          </motion.a>
-
+        
         </div>
       </section>
 
