@@ -439,7 +439,7 @@ const Home = () => {
           {/* 3rd Project End */}
 
           <motion.a
-            href={'/our-projects/'}
+            href={'/my-portfolio/our-projects/'}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
