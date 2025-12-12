@@ -39,7 +39,7 @@ const Footer = () => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
-                            <button className='getProjectBtn'>View Project</button>
+                            <button className='getProjectBtn'>View Projects</button>
                         </motion.a>
 
 
