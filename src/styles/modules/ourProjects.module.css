@@ -1,0 +1,317 @@
+.aboutBanner {
+  padding: 100px 0px 0px 0px;
+  background-color: #fff;
+}
+
+/* .stripBanner {
+  padding: 150px 0px;
+  background: url("/images/about-banner.png");
+  background-size: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+} */
+
+.aboutBanner h1 {
+  font-size: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 10;
+}
+
+.aboutBanner h5 {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 22px;
+  letter-spacing: 2;
+}
+
+.aboutHrLine {
+  width: 100px;
+  height: 5px;
+  background-color: var(--color-red-400);
+  border: none;
+  margin: auto;
+  margin-top: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.aboutBanner img {
+  width: 90%;
+  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ourProjectSection {
+  padding: 100px 0;
+  background: #0f172a;
+  color: #fff;
+  border-bottom: 1px solid #eeeeee28;
+}
+
+.ourProjectSection h2 {
+  font-size: 38px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.ourProjectSection p {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.ourProjectMain {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  width: 49%;
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardOverlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  transition: 0.5s ease;
+}
+
+.card:hover .cardOverlay {
+  left: 0;
+}
+
+.cardOverlay h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.cardOverlay h4 {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+.cardOverlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.cardOverlay li {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.cardOverlay p {
+  font-size: 16px;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 576px) {
+  .aboutBanner {
+    padding-bottom: 50px;
+  }
+
+  .aboutBanner h1 {
+    font-size: 38px;
+  }
+
+  .aboutBanner h5 {
+    font-size: 18px;
+  }
+
+  .aboutBanner img {
+    width: 100%;
+  }
+
+  .ourProjectSection {
+    padding: 70px 0px;
+  }
+
+  .ourProjectSection h2 {
+    font-size: 34px;
+  }
+
+  .ourProjectMain {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .cardOverlay h3 {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+
+  .cardOverlay h4 {
+    font-size: 14px;
+  }
+
+  .cardOverlay li {
+    font-size: 12px;
+    padding: 5px 5px;
+  }
+
+  .cardOverlay p {
+    font-size: 14px;
+    display: none;
+  }
+}
+
+/* Large phones / small tablets (577px–800px) */
+@media only screen and (min-width: 577px) and (max-width: 800px) {
+  .aboutBanner {
+    padding-bottom: 50px;
+  }
+
+  .aboutBanner h1 {
+    font-size: 38px;
+  }
+
+  .aboutBanner h5 {
+    font-size: 18px;
+  }
+
+  .aboutBanner img {
+    width: 100%;
+  }
+
+  .ourProjectSection {
+    padding: 70px 0px;
+  }
+
+  .ourProjectSection h2 {
+    font-size: 34px;
+  }
+
+  .ourProjectMain {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .cardOverlay h3 {
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+
+  .cardOverlay h4 {
+    font-size: 16px;
+  }
+
+  .cardOverlay li {
+    font-size: 14px;
+    padding: 5px 5px;
+  }
+
+  .cardOverlay p {
+    font-size: 14px;
+  }
+}
+
+/* Tablets (801px–1000px) */
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
+  .aboutBanner {
+    padding-bottom: 50px;
+  }
+
+  .aboutBanner h1 {
+    font-size: 38px;
+  }
+
+  .aboutBanner h5 {
+    font-size: 18px;
+  }
+
+  .aboutBanner img {
+    width: 100%;
+  }
+
+  .ourProjectSection {
+    padding: 70px 0px;
+  }
+
+  .ourProjectSection h2 {
+    font-size: 34px;
+  }
+
+  .ourProjectMain {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .cardOverlay h3 {
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+
+  .cardOverlay h4 {
+    font-size: 16px;
+  }
+
+  .cardOverlay li {
+    font-size: 14px;
+    padding: 5px 5px;
+  }
+
+  .cardOverlay p {
+    font-size: 14px;
+  }
+}
+
+/* Small laptops (1001px–1200px) */
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+}
+
+/* Desktops (1201px–1500px) */
+@media only screen and (min-width: 1201px) and (max-width: 1500px) {
+}
