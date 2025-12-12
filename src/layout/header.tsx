@@ -86,14 +86,23 @@ const Header = () => {
                     <Link href={'/our-projects'}>
                         <li>Our Projects</li>
                     </Link>
-                    <Link href={'/contact-us'}>
+                    {/* <Link href={'/contact-us'}>
                         <li>Contact Us</li>
-                    </Link>
+                    </Link> */}
 
                     <li className='contactIcon'>
-                        <span><MdEmail /></span>
-                        <span><FaGithub /></span>
-                        <span><FaLinkedinIn /></span>
+                        {/* Email */}
+                        <Link href="mailto:devpintar22@gmail.com">
+                            <span><MdEmail /></span>
+                        </Link>
+                        {/* GitHub */}
+                        <Link href="https://github.com/codewithpintar" target="_blank">
+                            <span><FaGithub /></span>
+                        </Link>
+                        {/* LinkedIn */}
+                        <Link href="https://www.linkedin.com/in/pintar1994/" target="_blank">
+                            <span><FaLinkedinIn /></span>
+                        </Link>
                     </li>
                 </motion.ul>
             )}
