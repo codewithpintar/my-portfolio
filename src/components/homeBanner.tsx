@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import React, { Fragment } from 'react'
 import { CONTACT } from '@/constants/contact'
+import Link from 'next/link'
 
 const HomeBanner = () => {
     return (
@@ -54,21 +55,15 @@ const HomeBanner = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.5 }}
                             >
-                                <motion.a
+                                <Link
                                     href={`tel:${CONTACT.PHONE}`}
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
                                 >
                                     <button className='bannerCallBtn'>Call Now</button>
-                                </motion.a>
+                                </Link>
 
-                                <motion.a
-                                    href="/our-projects"
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                >
+                                <Link href="/our-projects" >
                                     <button className='getProjectBtn'>View Projects</button>
-                                </motion.a>
+                                </Link>
                             </motion.div>
                         </motion.div>
                         <motion.div

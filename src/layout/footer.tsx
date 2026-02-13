@@ -26,31 +26,17 @@ const Footer = () => {
                         transition={{ delay: 0.5 }}
                         style={{ justifyContent: 'center' }}
                     >
-                        <motion.a
+                        <Link
                             href={`tel:${CONTACT.PHONE}`}
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
+
                         >
                             <button className='bannerCallBtn'>Call Now</button>
-                        </motion.a>
+                        </Link>
 
-                        <motion.a
-                            href={CONTACT.LIVE_SITE}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            <button className='liveSiteBtn'>View Live Site</button>
-                        </motion.a>
 
-                        <motion.a
-                            href={'/our-projects'}
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
+                        <Link href={'/our-projects'}>
                             <button className='getProjectBtn'>View Projects</button>
-                        </motion.a>
+                        </Link>
                     </motion.div>
 
                     <ul className="footerIcon">
