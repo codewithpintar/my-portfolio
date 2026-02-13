@@ -38,7 +38,6 @@ const Home = () => {
               transition={{ duration: 0.7 }}
             >
               <h4 >About Me</h4>
-              <hr className='hrLine' />
               <p>
                 I’m Pintar Sharma, a developer who believes in building purposeful technology.
                 I convert concepts into beautiful and functional products using modern frameworks like Next.js, React.js, Node.js, and MongoDB.

@@ -610,7 +610,7 @@ header {
   color: var(--primary-light);
   font-size: 34px;
   letter-spacing: 1.3px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: 700 !important;
   text-transform: uppercase;
   position: relative;
@@ -944,13 +944,13 @@ header {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.hrLine {
+/* .hrLine {
   width: 100px;
   height: 3px;
   border: none;
   background-color: var(--color-red-400);
   margin-bottom: 30px;
-}
+} */
 
 .leftExpertise p {
   font-size: 16px;
