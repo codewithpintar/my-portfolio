@@ -3,6 +3,7 @@ import Header from '@/layout/header'
 import React, { Fragment } from 'react'
 import styles from '../../styles/modules/ourProjects.module.css'
 import { motion } from 'framer-motion'
+import { PROJECTS } from '@/constants/contact'
 
 const OurProjects = () => {
     return (
@@ -107,35 +108,31 @@ const OurProjects = () => {
                         }}
                     >
 
-                        {/* CARD TEMPLATE (repeated) */}
                         {[
                             {
                                 title: "BetterLYF Wellness Platform",
-                                url: "https://www.betterlyf.com/",
+                                url: PROJECTS.BETTERLYF,
                                 img: "./images/betterlyf-dash.png",
                                 tech: ["Node.js", "Express.js", "MongoDB", "Next.js", "HTML", "CSS"],
                                 desc: "A mental wellness platform offering therapy sessions, emotional support, and self-help tools with secure user dashboards."
                             },
-
                             {
                                 title: "Fieldking Warranty Activation Portal",
-                                url: "https://warranty.fieldking.com/",
+                                url: PROJECTS.FIELDKING_WARRANTY,
                                 img: "./images/fieldking-dash.png",
                                 tech: ["Node.js", "Express.js", "MongoDB", "Next.js", "HTML", "CSS"],
                                 desc: "A warranty registration system that allows customers and dealers to activate product warranties with real-time data validation."
                             },
-
                             {
                                 title: "Fieldking Agricultural Equipment Website",
-                                url: "https://www.fieldking.com/",
+                                url: PROJECTS.FIELDKING,
                                 img: "./images/fieldking.png",
                                 tech: ["PHP", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
                                 desc: "Corporate website showcasing agricultural machinery with optimized performance, multilingual content, and SEO enhancements."
                             },
-
                             {
                                 title: "Beroni Agricultural Solutions",
-                                url: "https://www.beroni.in/",
+                                url: PROJECTS.BERONI,
                                 img: "./images/beroni.png",
                                 tech: ["PHP", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
                                 desc: "Brand website for Beroni farming equipment, built with responsive UI, fast navigation, and optimized product showcases."
@@ -164,7 +161,7 @@ const OurProjects = () => {
 
                                     <button
                                         className="getProjectBtn"
-                                        onClick={() => window.open(project.url, "_blank")}
+                                        onClick={() => window.open(project.url, "_blank", "noopener,noreferrer")}
                                     >
                                         View Project
                                     </button>

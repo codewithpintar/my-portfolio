@@ -3,15 +3,6 @@
   background-color: #fff;
 }
 
-/* .stripBanner {
-  padding: 150px 0px;
-  background: url("/images/about-banner.png");
-  background-size: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #fff;
-} */
-
 .aboutBanner h1 {
   font-size: 45px;
   text-align: center;
@@ -151,15 +142,18 @@
 
 @media only screen and (max-width: 576px) {
   .aboutBanner {
-    padding-bottom: 50px;
+    padding: 60px 0px 40px 0px;
   }
 
   .aboutBanner h1 {
-    font-size: 38px;
+    font-size: 32px;
+    line-height: 1.3;
   }
 
   .aboutBanner h5 {
-    font-size: 18px;
+    font-size: 16px;
+    padding: 0 10px;
+    line-height: 1.6;
   }
 
   .aboutBanner img {
@@ -167,15 +161,21 @@
   }
 
   .ourProjectSection {
-    padding: 70px 0px;
+    padding: 60px 0px;
   }
 
   .ourProjectSection h2 {
-    font-size: 34px;
+    font-size: 28px;
+  }
+
+  .projectDescription {
+    font-size: 15px;
+    padding: 0 10px;
   }
 
   .ourProjectMain {
     flex-direction: column;
+    gap: 20px;
   }
 
   .card {
@@ -183,37 +183,43 @@
   }
 
   .cardOverlay h3 {
-    font-size: 16px;
-    margin-bottom: 0px;
+    font-size: 18px;
+    margin-bottom: 8px;
   }
 
   .cardOverlay h4 {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .cardOverlay li {
-    font-size: 12px;
-    padding: 5px 5px;
+    font-size: 11px;
+    padding: 4px 8px;
   }
 
   .cardOverlay p {
-    font-size: 14px;
+    font-size: 13px;
     display: none;
+  }
+
+  .cardOverlay {
+    padding: 15px;
+    gap: 10px;
   }
 }
 
 /* Large phones / small tablets (577px–800px) */
 @media only screen and (min-width: 577px) and (max-width: 800px) {
   .aboutBanner {
-    padding-bottom: 50px;
+    padding: 70px 0px 50px 0px;
   }
 
   .aboutBanner h1 {
-    font-size: 38px;
+    font-size: 36px;
   }
 
   .aboutBanner h5 {
-    font-size: 18px;
+    font-size: 17px;
+    padding: 0 20px;
   }
 
   .aboutBanner img {
@@ -225,11 +231,17 @@
   }
 
   .ourProjectSection h2 {
-    font-size: 34px;
+    font-size: 30px;
+  }
+
+  .projectDescription {
+    font-size: 16px;
+    padding: 0 15px;
   }
 
   .ourProjectMain {
     flex-direction: column;
+    gap: 25px;
   }
 
   .card {
@@ -237,36 +249,37 @@
   }
 
   .cardOverlay h3 {
-    font-size: 24px;
-    margin-bottom: 0px;
+    font-size: 22px;
+    margin-bottom: 10px;
   }
 
   .cardOverlay h4 {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .cardOverlay li {
-    font-size: 14px;
-    padding: 5px 5px;
+    font-size: 13px;
+    padding: 5px 10px;
   }
 
   .cardOverlay p {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
 /* Tablets (801px–1000px) */
 @media only screen and (min-width: 801px) and (max-width: 1000px) {
   .aboutBanner {
-    padding-bottom: 50px;
+    padding: 80px 0px 60px 0px;
   }
 
   .aboutBanner h1 {
-    font-size: 38px;
+    font-size: 40px;
   }
 
   .aboutBanner h5 {
-    font-size: 18px;
+    font-size: 19px;
+    padding: 0 30px;
   }
 
   .aboutBanner img {
@@ -274,15 +287,21 @@
   }
 
   .ourProjectSection {
-    padding: 70px 0px;
+    padding: 80px 0px;
   }
 
   .ourProjectSection h2 {
-    font-size: 34px;
+    font-size: 32px;
+  }
+
+  .projectDescription {
+    font-size: 17px;
+    padding: 0 20px;
   }
 
   .ourProjectMain {
     flex-direction: column;
+    gap: 30px;
   }
 
   .card {
@@ -291,7 +310,7 @@
 
   .cardOverlay h3 {
     font-size: 24px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
 
   .cardOverlay h4 {
@@ -300,18 +319,10 @@
 
   .cardOverlay li {
     font-size: 14px;
-    padding: 5px 5px;
+    padding: 6px 12px;
   }
 
   .cardOverlay p {
-    font-size: 14px;
+    font-size: 16px;
   }
-}
-
-/* Small laptops (1001px–1200px) */
-@media only screen and (min-width: 1001px) and (max-width: 1200px) {
-}
-
-/* Desktops (1201px–1500px) */
-@media only screen and (min-width: 1201px) and (max-width: 1500px) {
 }

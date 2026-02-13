@@ -5,10 +5,9 @@ export default function Document() {
     <Html lang="en">
       <Head>
         {/* Basic Meta */}
-        <title>Pintar Sharma – Software Developer Portfolio</title>
         <meta
           name="description"
-          content="Welcome to my portfolio — I’m Pintar Sharma, a Software Developer skilled in Next.js, React, UI/UX, and modern web development."
+          content="Welcome to my portfolio — I'm Pintar Sharma, a Software Developer skilled in Next.js, React, UI/UX, and modern web development."
         />
         <meta name="author" content="Pintar Sharma" />
 

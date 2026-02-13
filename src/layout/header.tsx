@@ -4,6 +4,7 @@ import React, { Fragment, useEffect, useState } from 'react'
 import { FaBarsStaggered, FaGithub, FaLinkedinIn } from 'react-icons/fa6'
 import { IoCloseSharp } from 'react-icons/io5'
 import { MdEmail } from 'react-icons/md'
+import { CONTACT } from '@/constants/contact'
 
 const Header = () => {
 
@@ -37,10 +38,7 @@ const Header = () => {
                             <Link href={'/our-projects'}>
                                 <li>Our Projects</li>
                             </Link>
-                            {/* <Link href={'/contact-us'}>
-                                <li>Contact Us</li>
-                            </Link> */}
-                            <Link href="tel:8920297423">
+                            <Link href={`tel:${CONTACT.PHONE}`}>
                                 <li className='callButton'>
                                     Call Now
                                 </li>
@@ -86,21 +84,15 @@ const Header = () => {
                     <Link href={'/our-projects'}>
                         <li>Our Projects</li>
                     </Link>
-                    {/* <Link href={'/contact-us'}>
-                        <li>Contact Us</li>
-                    </Link> */}
 
                     <li className='contactIcon'>
-                        {/* Email */}
-                        <Link href="mailto:devpintar22@gmail.com">
+                        <Link href={`mailto:${CONTACT.EMAIL}`}>
                             <span><MdEmail /></span>
                         </Link>
-                        {/* GitHub */}
-                        <Link href="https://github.com/codewithpintar" target="_blank">
+                        <Link href={CONTACT.GITHUB} target="_blank" rel="noopener noreferrer">
                             <span><FaGithub /></span>
                         </Link>
-                        {/* LinkedIn */}
-                        <Link href="https://www.linkedin.com/in/pintar1994/" target="_blank">
+                        <Link href={CONTACT.LINKEDIN} target="_blank" rel="noopener noreferrer">
                             <span><FaLinkedinIn /></span>
                         </Link>
                     </li>

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React, { Fragment } from 'react'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa6'
 import { MdEmail } from 'react-icons/md'
+import { CONTACT } from '@/constants/contact'
 
 const Footer = () => {
     return (
@@ -25,9 +26,8 @@ const Footer = () => {
                         transition={{ delay: 0.5 }}
                         style={{ justifyContent: 'center' }}
                     >
-
                         <motion.a
-                            href="tel:8920297423"
+                            href={`tel:${CONTACT.PHONE}`}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
@@ -41,25 +41,17 @@ const Footer = () => {
                         >
                             <button className='getProjectBtn'>View Projects</button>
                         </motion.a>
-
-
-                        {/* <motion.button className='getProjectBtn' whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                                     View Project
-                                   </motion.button> */}
                     </motion.div>
 
                     <ul className="footerIcon">
                         <li>
-                            {/* Email */}
-                            <Link href="mailto:devpintar22@gmail.com">
+                            <Link href={`mailto:${CONTACT.EMAIL}`}>
                                 <span><MdEmail /></span>
                             </Link>
-                            {/* GitHub */}
-                            <Link href="https://github.com/codewithpintar" target="_blank">
+                            <Link href={CONTACT.GITHUB} target="_blank" rel="noopener noreferrer">
                                 <span><FaGithub /></span>
                             </Link>
-                            {/* LinkedIn */}
-                            <Link href="https://www.linkedin.com/in/pintar1994/" target="_blank">
+                            <Link href={CONTACT.LINKEDIN} target="_blank" rel="noopener noreferrer">
                                 <span><FaLinkedinIn /></span>
                             </Link>
                         </li>

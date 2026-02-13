@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import React, { Fragment } from 'react'
+import { CONTACT } from '@/constants/contact'
 
 const HomeBanner = () => {
     return (
@@ -26,7 +27,7 @@ const HomeBanner = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2 }}
                             >
-                                I'm Pintar Sharma
+                                I&apos;m Pintar Sharma
                             </motion.h1>
 
                             <motion.h1
@@ -54,20 +55,20 @@ const HomeBanner = () => {
                                 transition={{ delay: 0.5 }}
                             >
                                 <motion.a
-                                    href="tel:8920297423"
+                                    href={`tel:${CONTACT.PHONE}`}
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                 >
                                     <button className='bannerCallBtn'>Call Now</button>
                                 </motion.a>
 
-                                <motion.button
-                                    className='getProjectBtn'
+                                <motion.a
+                                    href="/our-projects"
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                 >
-                                    Get A Projects
-                                </motion.button>
+                                    <button className='getProjectBtn'>View Projects</button>
+                                </motion.a>
                             </motion.div>
                         </motion.div>
                         <motion.div

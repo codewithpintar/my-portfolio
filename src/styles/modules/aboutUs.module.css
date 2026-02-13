@@ -3,15 +3,6 @@
   background-color: #fff;
 }
 
-/* .stripBanner {
-  padding: 150px 0px;
-  background: url("/images/about-banner.png");
-  background-size: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #fff;
-} */
-
 .aboutBanner h1 {
   font-size: 45px;
   text-align: center;
@@ -102,15 +93,62 @@
 
 @media only screen and (max-width: 576px) {
   .aboutBanner {
-    padding-bottom: 50px;
+    padding: 60px 0px 40px 0px;
   }
 
   .aboutBanner h1 {
-    font-size: 38px;
+    font-size: 32px;
+    line-height: 1.3;
   }
 
   .aboutBanner h5 {
-    font-size: 18px;
+    font-size: 16px;
+    padding: 0 10px;
+    line-height: 1.6;
+  }
+
+  .aboutBanner img {
+    width: 100%;
+  }
+
+  .objectiveSection {
+    padding: 60px 0px;
+  }
+
+  .objectiveSection h2 {
+    font-size: 28px;
+  }
+
+  .objectiveSection p {
+    font-size: 15px;
+    padding: 0 10px;
+    line-height: 1.7;
+  }
+
+  .skillsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .skillItem {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+}
+
+/* Large phones / small tablets (577px–800px) */
+@media only screen and (min-width: 577px) and (max-width: 800px) {
+  .aboutBanner {
+    padding: 70px 0px 50px 0px;
+  }
+
+  .aboutBanner h1 {
+    font-size: 36px;
+  }
+
+  .aboutBanner h5 {
+    font-size: 17px;
+    padding: 0 20px;
   }
 
   .aboutBanner img {
@@ -122,44 +160,33 @@
   }
 
   .objectiveSection h2 {
-    font-size: 34px;
-  }
-}
-
-/* Large phones / small tablets (577px–800px) */
-@media only screen and (min-width: 577px) and (max-width: 800px) {
-  .aboutBanner {
-    padding-bottom: 50px;
+    font-size: 30px;
   }
 
-  .aboutBanner h1 {
-    font-size: 38px;
+  .objectiveSection p {
+    font-size: 16px;
+    padding: 0 15px;
   }
 
-  .aboutBanner h5 {
-    font-size: 18px;
-  }
-
-  .aboutBanner img {
-    width: 100%;
-  }
-  .objectiveSection {
-    padding: 70px 0px;
+  .skillsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 14px;
   }
 }
 
 /* Tablets (801px–1000px) */
 @media only screen and (min-width: 801px) and (max-width: 1000px) {
   .aboutBanner {
-    padding-bottom: 50px;
+    padding: 80px 0px 60px 0px;
   }
 
   .aboutBanner h1 {
-    font-size: 38px;
+    font-size: 40px;
   }
 
   .aboutBanner h5 {
-    font-size: 18px;
+    font-size: 19px;
+    padding: 0 30px;
   }
 
   .aboutBanner img {
@@ -167,14 +194,19 @@
   }
 
   .objectiveSection {
-    padding: 70px 0px;
+    padding: 80px 0px;
   }
-}
 
-/* Small laptops (1001px–1200px) */
-@media only screen and (min-width: 1001px) and (max-width: 1200px) {
-}
+  .objectiveSection h2 {
+    font-size: 32px;
+  }
 
-/* Desktops (1201px–1500px) */
-@media only screen and (min-width: 1201px) and (max-width: 1500px) {
+  .objectiveSection p {
+    font-size: 17px;
+    padding: 0 20px;
+  }
+
+  .skillsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
 }

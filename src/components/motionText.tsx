@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
 
+interface MotionTextProps {
+    text: string;
+    className?: string;
+}
 
-export default function MotionText({ text, className }: any) {
+export default function MotionText({ text, className }: MotionTextProps) {
     return (
         <motion.h1
             className={className}

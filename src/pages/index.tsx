@@ -3,6 +3,7 @@ import Footer from '@/layout/footer'
 import Header from '@/layout/header'
 import { motion } from 'framer-motion'
 import React, { Fragment } from 'react'
+import { CONTACT, PROJECTS } from '@/constants/contact'
 
 const Home = () => {
   return (
@@ -12,11 +13,11 @@ const Home = () => {
       <section className='skillsSections'>
         <div className="container">
           <ul className='skillsList'>
+            <li>Next.js</li>
+            <li>React.js</li>
             <li>HTML5</li>
             <li>CSS</li>
             <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Next.js</li>
             <li>Node.js</li>
             <li>Git</li>
             <li>GitHub</li>
@@ -184,7 +185,7 @@ const Home = () => {
                 transition={{ delay: 0.5 }}
               >
                 <motion.a
-                  href="tel:8920297423"
+                  href={`tel:${CONTACT.PHONE}`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -192,14 +193,14 @@ const Home = () => {
                 </motion.a>
 
                 <motion.a
-                  href={'https://www.betterlyf.com/'}
+                  href={PROJECTS.BETTERLYF}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   target='_blank'
+                  rel="noopener noreferrer"
                 >
                   <button className='getProjectBtn'>View Project</button>
                 </motion.a>
-
               </motion.div>
 
             </motion.div>
@@ -310,7 +311,7 @@ const Home = () => {
                 transition={{ delay: 0.5 }}
               >
                 <motion.a
-                  href="tel:8920297423"
+                  href={`tel:${CONTACT.PHONE}`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -318,10 +319,11 @@ const Home = () => {
                 </motion.a>
 
                 <motion.a
-                  href={'https://warranty.fieldking.com/warranty-activation'}
+                  href={PROJECTS.FIELDKING_WARRANTY}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   target='_blank'
+                  rel="noopener noreferrer"
                 >
                   <button className='getProjectBtn'>View Project</button>
                 </motion.a>
@@ -399,9 +401,8 @@ const Home = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
               >
-
                 <motion.a
-                  href="tel:8920297423"
+                  href={`tel:${CONTACT.PHONE}`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -409,18 +410,14 @@ const Home = () => {
                 </motion.a>
 
                 <motion.a
-                  href={'https://www.fieldking.com/'}
+                  href={PROJECTS.FIELDKING}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   target='_blank'
+                  rel="noopener noreferrer"
                 >
                   <button className='getProjectBtn'>View Project</button>
                 </motion.a>
-
-
-                {/* <motion.button className='getProjectBtn' whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  View Project
-                </motion.button> */}
               </motion.div>
             </motion.div>
 
@@ -438,7 +435,7 @@ const Home = () => {
           </div>
           {/* 3rd Project End */}
 
-        
+
         </div>
       </section>
 
