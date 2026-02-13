@@ -35,6 +35,16 @@ const Footer = () => {
                         </motion.a>
 
                         <motion.a
+                            href={CONTACT.LIVE_SITE}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                        >
+                            <button className='liveSiteBtn'>View Live Site</button>
+                        </motion.a>
+
+                        <motion.a
                             href={'/our-projects'}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}

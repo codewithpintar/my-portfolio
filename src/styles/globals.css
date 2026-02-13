@@ -445,6 +445,40 @@ header {
   fill: var(--primary-color);
 }
 
+.liveSiteBtn {
+  align-items: center;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: -0.8px;
+  outline: 0;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(71, 116, 249, 0.4);
+}
+
+.liveSiteBtn:hover {
+  background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
+  box-shadow: 0 6px 20px rgba(71, 116, 249, 0.6);
+  transform: translateY(-2px);
+}
+
+.liveSiteBtn:active {
+  transform: translateY(0);
+}
+
 .rightContent {
   width: 50%;
   display: flex;
@@ -1103,7 +1137,8 @@ header {
   }
 
   .bannerCallBtn,
-  .getProjectBtn {
+  .getProjectBtn,
+  .liveSiteBtn {
     width: 100%;
     padding: 12px 20px;
     font-size: 15px;

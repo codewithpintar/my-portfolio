@@ -4,6 +4,7 @@ export const CONTACT = {
   EMAIL: 'devpintar22@gmail.com',
   GITHUB: 'https://github.com/codewithpintar',
   LINKEDIN: 'https://www.linkedin.com/in/pintar1994/',
+  LIVE_SITE: 'https://codewithpintar.github.io/my-portfolio',
 } as const;
 
 // Project URLs
