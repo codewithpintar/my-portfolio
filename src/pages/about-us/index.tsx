@@ -3,6 +3,7 @@ import Header from '@/layout/header'
 import React, { Fragment } from 'react'
 import styles from '../../styles/modules/aboutUs.module.css'
 import { motion } from 'framer-motion'
+import Timeline from '@/components/timeline'
 
 const AboutUs = () => {
     return (
@@ -305,6 +306,8 @@ const AboutUs = () => {
 
                 </div>
             </section>
+
+            <Timeline />
 
             <Footer />
         </Fragment>

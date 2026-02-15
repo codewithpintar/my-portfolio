@@ -4,6 +4,9 @@ import Header from '@/layout/header'
 import { motion } from 'framer-motion'
 import React, { Fragment } from 'react'
 import { CONTACT, PROJECTS } from '@/constants/contact'
+import Services from '@/components/services'
+import Testimonials from '@/components/testimonials'
+import ContactForm from '@/components/contactForm'
 
 const Home = () => {
   return (
@@ -515,6 +518,11 @@ const Home = () => {
         </div>
       </section>
 
+      <Services />
+
+      <Testimonials />
+
+      <ContactForm />
 
       <Footer />
     </Fragment>
