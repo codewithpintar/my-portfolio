@@ -4,29 +4,18 @@ import React, { Fragment } from 'react'
 const Timeline = () => {
     const experiences = [
         {
-            year: "2023 - Present",
-            title: "Full Stack Developer",
-            company: "Freelance",
+            year: "2022 - Present",
+            title: "Web Developer",
+            company: "Fieldking & BetterLYF",
             description: "Building modern web applications for clients worldwide. Specializing in React, Next.js, Node.js, and MongoDB stack."
         },
         {
-            year: "2022 - 2023",
-            title: "Web Developer",
-            company: "Fieldking",
-            description: "Developed warranty activation system and corporate website. Implemented OTP authentication, admin dashboards, and responsive UI."
-        },
-        {
             year: "2021 - 2022",
-            title: "Frontend Developer",
-            company: "BetterLYF Wellness",
-            description: "Created wellness platform with therapist booking system, payment integration, and real-time chat support."
+            title: "Web Developer",
+            company: "Wagnistrip Private Limited",
+            description: "Developed a travel booking website for air tickets, holiday packages, and hotel reservations using PHP Laravel, HTML, CSS, and Bootstrap, ensuring responsive design and smooth user experience."
         },
-        {
-            year: "2020 - 2021",
-            title: "Junior Developer",
-            company: "Various Projects",
-            description: "Started professional journey building websites and learning modern web technologies. Focused on HTML, CSS, JavaScript, and PHP."
-        }
+       
     ]
 
     return (
